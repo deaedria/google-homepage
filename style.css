@@ -2,7 +2,55 @@ body, html, a {
     font-family: Arial, Helvetica, sans-serif;
     color: #5f6368;
     text-decoration: none;
-    pad
+}
+header{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.header-left{
+    padding-left: 8px;
+}
+.header-left a{
+    padding: 12px 12px;
+    font-size: 13px;
+    height: 60px;
+    line-height: 60px;
+}
+.header-right{
+    padding-right: 40px;
+}
+.header-right a{
+    padding: 12px 12px;
+    font-size: 13px;
+    height: 60px;
+    line-height: 60px;
+}
+.header-right #menu-bar{
+    padding-right: 15px;
+    padding-left: 5px;
+}
+.header-right #menu-bar img{
+    width: 20px;
+    margin-bottom: -5px;
+}
+.header-right .login{
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: white;
+    font-weight: bold;
+    background-color: #4485f7;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 420px;
+
 }
 footer{
     bottom: 0;
@@ -13,6 +61,11 @@ footer{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+}
+@media (max-width: 600px){
+    footer{
+        justify-content: center;
+    }
 }
 .footer-left{
     padding-left: 15px;
@@ -31,4 +84,7 @@ footer{
     font-size: 14px;
     height: 40px;
     line-height: 40px;
+}
+a:hover:not(#menu-bar){
+    text-decoration: underline;
 }
