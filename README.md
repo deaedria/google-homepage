@@ -1,3 +1,5 @@
 # Google-Homepage
-recreate google homepage 
+recreate a google homepage 
+![live preview](https://deaedria.github.io/google-homepage/)
+
 
